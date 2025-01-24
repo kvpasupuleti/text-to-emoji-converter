@@ -1,6 +1,7 @@
 import Github from "../icons/Github";
 import Instagram from "../icons/Instagram";
 import LinkedIn from "../icons/LinkedIn";
+import Npm from "../icons/Npm";
 import "./footer.css";
 
 const Footer = () => {
@@ -12,6 +13,7 @@ const Footer = () => {
         </div>
         <div className="footer-links">
           <Github />
+          <Npm />
           <LinkedIn />
           <Instagram />
         </div>
