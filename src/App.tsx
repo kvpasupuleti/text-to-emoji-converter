@@ -64,7 +64,7 @@ function App() {
             <textarea
               value={inputText}
               onChange={handleInputChange}
-              className="w-full h-32 p-4 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-colors"
+              className="w-full min-h-32 p-4 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-colors"
               placeholder="Type something like 'What a sunny day it is!'"
             />
           </div>
@@ -87,7 +87,7 @@ function App() {
                 )}
               </button>
             </div>
-            <div className="w-full h-32 p-4 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100">
+            <div className="w-full min-h-32 p-4 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-gray-100 whitespace-pre-wrap">
               {outputText}
             </div>
           </div>

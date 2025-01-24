@@ -17,18 +17,26 @@ export class EmojiConverter {
    * @returns The text with words replaced by emojis
    */
   convert(text: string): string {
-    let result = text;
-    Object.entries(this.emojiMap).forEach(([word, emoji]) => {
-      const regex = new RegExp(`\\b${word}(s)?\\b`, "gi");
-      result = result.replace(regex, (match) => {
-        // Avoid treating 2-letter words ending in 's' as plurals (e.g., "is")
-        if (match.length === 2 && match.toLowerCase().endsWith("s")) {
-          return match;
-        }
-        return match.toLowerCase().endsWith("s") ? `${emoji}s` : emoji;
+    // Split the text into lines to preserve line breaks
+    const lines = text.split("\n");
+
+    // Process each line separately while preserving whitespace
+    const convertedLines = lines.map((line) => {
+      let result = line;
+      Object.entries(this.emojiMap).forEach(([word, emoji]) => {
+        const regex = new RegExp(`\\b${word}(s)?\\b`, "gi");
+        result = result.replace(regex, (match) => {
+          if (match.length === 2 && match.toLowerCase().endsWith("s")) {
+            return match;
+          }
+          return match.toLowerCase().endsWith("s") ? `${emoji}s` : emoji;
+        });
       });
+      return result;
     });
-    return result;
+
+    // Join the lines back together with newlines
+    return convertedLines.join("\n");
   }
 
   /**
