@@ -12,9 +12,9 @@ const Footer = () => {
           Crafted with ❤️ by Krishna Vamsi Pasupuleti
         </div>
         <div className="footer-links">
+          <LinkedIn />
           <Github />
           <Npm />
-          <LinkedIn />
           <Instagram />
         </div>
       </div>
