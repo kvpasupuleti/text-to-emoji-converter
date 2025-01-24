@@ -1,5 +1,5 @@
 {
-  "name": "text-to-emoji-converter",
+  "name": "@kvpasupuleti/text-to-emoji-converter",
   "private": false,
   "version": "1.0.0",
   "type": "module",

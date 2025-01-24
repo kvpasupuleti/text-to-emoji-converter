@@ -4,8 +4,16 @@ A flexible and customizable text-to-emoji converter for JavaScript and TypeScrip
 
 ## Installation
 
+If you are using npm
+
 ```bash
-npm install text-to-emoji-converter
+npm install @kvpasupuleti/text-to-emoji-converter
+```
+
+If you are using yarn
+
+```bash
+yarn add @kvpasupuleti/text-to-emoji-converter
 ```
 
 ## Usage
@@ -13,7 +21,7 @@ npm install text-to-emoji-converter
 ### Basic Usage
 
 ```typescript
-import { EmojiConverter } from 'text-to-emoji-converter';
+import { EmojiConverter } from '@kvpasupuleti/text-to-emoji-converter';
 
 // Create a new converter instance
 const converter = new EmojiConverter();
