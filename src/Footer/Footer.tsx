@@ -14,7 +14,6 @@ const Footer = () => {
         <div className="footer-links">
           <Github />
           <LinkedIn />
-          <Gmail />
           <Instagram />
         </div>
       </div>
