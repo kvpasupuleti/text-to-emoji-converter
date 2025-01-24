@@ -1,5 +1,4 @@
 import Github from "../icons/Github";
-import Gmail from "../icons/Gmail";
 import Instagram from "../icons/Instagram";
 import LinkedIn from "../icons/LinkedIn";
 import "./footer.css";
