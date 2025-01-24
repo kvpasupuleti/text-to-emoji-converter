@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Sun, Moon, Sparkles } from "lucide-react";
 import { EmojiConverter } from "./lib/EmojiConverter";
+import Footer from "./Footer/Footer";
 
 function App() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -93,10 +94,7 @@ function App() {
           </div>
         </div>
       </div>
-
-      <footer className="w-full py-32 text-center text-gray-600 dark:text-gray-400 bg-gray-50 dark:bg-gray-900">
-        Crafted with ❤️ by Krishna Vamsi Pasupuleti
-      </footer>
+      <Footer />
     </div>
   );
 }

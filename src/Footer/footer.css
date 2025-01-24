@@ -1,0 +1,29 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.github-icon {
+  height: 1em;
+  width: 1em;
+  transform: scale(1.05);
+}
