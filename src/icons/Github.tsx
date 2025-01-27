@@ -4,7 +4,7 @@ const Github = () => {
       aria-label="github"
       rel="noopener"
       target="_blank"
-      href="https://github.com/kvpasupuleti"
+      href="https://github.com/kvpasupuleti/text-to-emoji-converter"
     >
       <svg viewBox="0 0 120.78 117.79" className="github-icon">
         <g id="Layer_2" data-name="Layer 2">

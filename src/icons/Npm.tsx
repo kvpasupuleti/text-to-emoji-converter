@@ -3,7 +3,7 @@ const Npm = () => (
     aria-label="linkedin"
     rel="noopener"
     target="_blank"
-    href="https://www.npmjs.com/~kv_pasupuleti/"
+    href="https://www.npmjs.com/package/@kvpasupuleti/text-to-emoji-converter"
   >
     <svg
       width="32px"
